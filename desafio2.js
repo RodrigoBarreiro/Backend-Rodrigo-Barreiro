@@ -113,34 +113,42 @@ class ProductManager
 
 
 const product1 = {
-    title: "Producto de prueba",
-    descripcion: "este es un producto de prueba",
-    price: 400,
+    title: "Cerveza Negra",
+    descripcion: "maltas oscuras provenientes del cereal malteado (humedecido, germinado y secado)",
+    price: 100,
     thumbnail: "sin imagen",
     code: "abc123",
     stock: 25,
-
 };
 
 const product2 = {
-    title: "Producto de prueba2",
-    descripcion: "este es un producto de prueba2",
-    price: 300,
+    title: "Cerveza Roja",
+    descripcion: "De color cobre profundo con espuma densa y cremosa. aromas a caramelo con suaves notas a lúpulo. En boca se denota un leve dulzor y sabor a granos tostados.",
+    price: 200,
     thumbnail: "sin imagen",
     code: "abc125",
-    stock: 25,
-
+    stock: 30,
 };
+
+const product3 = {
+    title: "Cerveza IPA",
+    descripcion: "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    price: 250,
+    thumbnail: "sin imagen",
+    code: "abc124",
+    stock: 50,
+};
+
 
 const pm = new ProductManager();
 
 const generate = async () => {
     console.log (await pm.addProduct (product1));
     console.log (await pm.addProduct (product2));
+    console.log (await pm.addProduct (product3));
 }
 
 /* generate(); */
-
 
 const main = async () => {
     console.log ("Lista de productos: ", await pm.getProduct());
