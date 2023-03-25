@@ -1,4 +1,4 @@
-const fs = require ('fs').promises;
+import fs from "fs/promises";
 
 class ProductManager
 {
@@ -8,14 +8,19 @@ class ProductManager
     
     constructor(){
         this.#products = [];
-        this.path = `./products.json`
+        this.path = `./src/products.json`;
     }
 
-    async getProduct(){
+    async getProduct(limit){
         try
         {
             const productFile = await fs.readFile(this.path, "utf-8");
-            return JSON.parse (productFile);
+            const product = JSON.parse (productFile);
+            if (limit) {
+                const subArray = product.slice(0, limit);
+                return subArray;
+            } 
+            return product;
         }
         catch(error){
             await fs.writeFile(this.path, "[]");
@@ -111,51 +116,4 @@ class ProductManager
     }
 }
 
-
-const product1 = {
-    title: "Cerveza Negra",
-    descripcion: "maltas oscuras provenientes del cereal malteado (humedecido, germinado y secado)",
-    price: 100,
-    thumbnail: "sin imagen",
-    code: "abc123",
-    stock: 25,
-};
-
-const product2 = {
-    title: "Cerveza Roja",
-    descripcion: "De color cobre profundo con espuma densa y cremosa. aromas a caramelo con suaves notas a lúpulo. En boca se denota un leve dulzor y sabor a granos tostados.",
-    price: 200,
-    thumbnail: "sin imagen",
-    code: "abc125",
-    stock: 30,
-};
-
-const product3 = {
-    title: "Cerveza IPA",
-    descripcion: "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
-    price: 250,
-    thumbnail: "sin imagen",
-    code: "abc124",
-    stock: 50,
-};
-
-
-const pm = new ProductManager();
-
-const generate = async () => {
-    console.log (await pm.addProduct (product1));
-    console.log (await pm.addProduct (product2));
-    console.log (await pm.addProduct (product3));
-}
-
-/* generate(); */
-
-const main = async () => {
-    console.log ("Lista de productos: ", await pm.getProduct());
-    console.log ("Producto encontrado: ", await pm.getProductById(1));
-    console.log (await pm.updateProduct(2, {...product1, code: "PAPURRI"}));
-    console.log ("lista de Productos Modificados: ", await pm.getProduct());
-    console.log (await pm.deleteProduct(1));
-    console.log ("lista de Productos ELIMINADOS: ", await pm.getProduct());
-}
-main(); 
+export default ProductManager;

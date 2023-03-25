@@ -1,0 +1,92 @@
+[
+  {
+    "id":1, 
+    "title": "Cerveza Negra",
+    "descripcion": "maltas oscuras provenientes del cereal malteado (humedecido, germinado y secado)",
+    "price": 100,
+    "thumbnail": "sin imagen",
+    "code": "abc123",
+    "stock": 25
+},
+  {
+    "id": 2,
+    "title": "Cerveza Negra",
+    "descripcion": "maltas oscuras provenientes del cereal malteado (humedecido, germinado y secado)",
+    "price": 100,
+    "thumbnail": "sin imagen",
+    "code": "PAPURRI",
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc124",
+    "stock": 50
+  },
+  {
+    "id": 4,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc126",
+    "stock": 50
+  },
+  {
+    "id": 5,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc127",
+    "stock": 50
+  },
+  {
+    "id": 6,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc128",
+    "stock": 50
+  },
+  {
+    "id": 7,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc129",
+    "stock": 50
+  },
+  {
+    "id": 8,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc1210",
+    "stock": 50
+  },
+  {
+    "id": 9,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc1211",
+    "stock": 50
+  },
+  {
+    "id": 10,
+    "title": "Cerveza IPA",
+    "descripcion": "cervezas de alta graduación alcohólica, al tener una mayor cantidad de lúpulo y por lo tanto un amargor  y aroma intensos y cierta complejidad en el paladar.",
+    "price": 250,
+    "thumbnail": "sin imagen",
+    "code": "abc1212",
+    "stock": 50
+  }
+]
